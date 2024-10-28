@@ -1,0 +1,84 @@
+  .evento-window-container {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .evento-window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d7;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .evento-close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .evento-window-body {
+    padding: 15px;
+  }
+  
+  input, textarea, select {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .evento-lista {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+  }
+  
+  .evento-item {   
+    border-bottom: 1px solid #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;        
+    width: 94%;
+    padding: 5px;
+    margin-left: 5px;    
+    margin-bottom: 10px;
+  } 
+
+  .evento-item-selected {
+    background-color: #6792a7;                 
+  }   
+ 
+  .evento-button:hover {
+    background-color: #005bb5;
+  }
+
+  .evento-buttons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .evento-button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #0078d7;
+    background-color: #0078d7;
+    color: white;
+    border-radius: 3px;
+    flex: 1; 
+    margin: 0 5px;
+  } 
