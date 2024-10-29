@@ -4,8 +4,8 @@ Projeto desenvolvido com tecnologias Java para o backend e React para o frontend
 
 ## Índice
 - [Sobre o Projeto](#sobre-o-projeto)
-- [Instalação e Configuração](#instalacao-e-configuracao)
-- [Utilização do Projeto](#utilizacao-do-projeto)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Utilização do Projeto](#utilização-do-projeto)
 
 ## Sobre o Projeto
 Este projeto foi desenvolvido para cadastrar e gerenciar eventos agendados por diferentes instituições, permitindo a criação, edição, e visualização de eventos e instituições. Ele foi dividido em dois módulos principais: **backend** (Java) e **frontend** (React).
