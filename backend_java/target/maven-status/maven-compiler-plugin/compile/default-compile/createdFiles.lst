@@ -12,7 +12,6 @@ br\com\teste\eventos\service\InstituicaoService.class
 br\com\teste\eventos\mapper\EventoMapperImpl.class
 br\com\teste\eventos\constants\TipoInstituicao.class
 br\com\teste\eventos\resource\InstituicaoEndpoint.class
-br\com\teste\eventos\config\WebConfig.class
 br\com\teste\eventos\mapper\InstituicaoMapperImpl.class
 br\com\teste\eventos\resource\api\EventoAPI.class
 br\com\teste\eventos\repository\InstituicaoRepository.class

@@ -1,8 +1,8 @@
 package br.com.teste.eventos.service;
 
-import br.com.teste.eventos.constants.TipoInstituicao;
 import br.com.teste.eventos.dto.InstituicaoDTO;
 import br.com.teste.eventos.resource.InstituicaoEndpoint;
+import br.com.teste.eventos.utils.InstituicaoDTOUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -41,14 +41,9 @@ class InstituicaoEndpointTest {
     void testInserirInstituicao() throws Exception {
 
         //objeto da request
-        InstituicaoDTO request = new InstituicaoDTO();
-        request.setNome("Confederacao FLorianopolis");
-        request.setTipoInstituicao(TipoInstituicao.CONFEDERACAO);
-
+        InstituicaoDTO request = InstituicaoDTOUtils.retornarInstituicaoDTOTeste(0);
         //objeto da resposta
-        InstituicaoDTO response = new InstituicaoDTO();
-        BeanUtils.copyProperties(request, response);
-        response.setId(1);
+        InstituicaoDTO response = InstituicaoDTOUtils.retornarInstituicaoDTOTeste(1);
 
         when(service.inserir(any())).thenReturn(response);
 
