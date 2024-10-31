@@ -1,0 +1,82 @@
+.evento-window-container {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px; 
+    max-width: 600px; 
+    background-color: #f5f5f5; 
+    border: 2px solid #0078d7; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden; 
+}
+  
+.evento-window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d7; 
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+  
+.evento-close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.evento-lista {
+    margin-top: 20px;
+    max-height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: auto;  
+    white-space: nowrap; 
+}
+  
+.evento-item {   
+    padding: 10px;
+    border: 1px solid #ccc; 
+    margin-bottom: 10px; 
+    border-radius: 3px; 
+    white-space: nowrap; 
+}
+  
+.evento-item-ativo {
+    background-color: #d4edda;
+    color: #155724;
+}
+  
+.evento-item-inativo {
+    background-color: #f8d7da; 
+    color: #721c24;
+}
+
+.evento-legenda {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+}
+  
+.legenda-item {
+    padding: 5px 10px; 
+    border-radius: 3px;
+    color: white; 
+    font-weight: bold; 
+}
+  
+.legenda-item.ativo {
+    background-color: #4caf50; 
+}
+  
+.legenda-item.inativo {
+    background-color: #f44336; 
+}
