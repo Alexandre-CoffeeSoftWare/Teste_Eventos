@@ -3,11 +3,13 @@ import { FaBuilding } from 'react-icons/fa';
 import { ImAddressBook } from 'react-icons/im';
 import InstituicaoCadastro from './InstituicaoCadastro';
 import EventoCadastro from './EventoCadastro';
+import EventoConsulta from './EventoConsulta'; 
 import './App.css';
 
 function App() {
   const [showInstituicaoForm, setShowInstituicaoForm] = useState(false);
   const [showEventoForm, setShowEventoForm] = useState(false);
+  const [showEventoConsulta, setShowEventoConsulta] = useState(false);
   const [instituicoes, setInstituicoes] = useState([]);
 
   const toggleInstituicaoForm = () => {
@@ -16,6 +18,10 @@ function App() {
 
   const toggleEventoForm = () => {
     setShowEventoForm(!showEventoForm);
+  };
+
+  const toggleEventoConsulta = () => {
+    setShowEventoConsulta(!showEventoConsulta);
   };
 
   const adicionarInstituicao = (novaInstituicao) => {
@@ -33,6 +39,10 @@ function App() {
         <div className="menu-icon" onClick={toggleEventoForm}>
           <ImAddressBook size={30} />
           <span>Cadastro de Eventos</span>
+        </div>
+        <div className="menu-icon" onClick={toggleEventoConsulta}> 
+          <ImAddressBook size={30} />
+          <span>Consulta de Eventos</span>
         </div>    
       </div>
       <div className="content">        
@@ -47,6 +57,9 @@ function App() {
             instituicoes={instituicoes}
             onClose={toggleEventoForm}
           />
+        )}
+        {showEventoConsulta && ( 
+          <EventoConsulta onClose={toggleEventoConsulta} />
         )}
       </div>
     </div>
